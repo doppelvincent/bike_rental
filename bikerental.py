@@ -2,14 +2,8 @@ import datetime
 class BikeRental:
     
     def __init__(self,stock=0):
-        """
-        Our constructor class that instantiates bike rental shop.
-        """
         self.stock = stock 
     def displaystock(self):
-        """
-        Displays the bikes currently available for rent in the shop.
-        """
         print("We have currently {} bikes available to     rent.".format(self.stock))
         return self.stock
     def rentBikeOnHourlyBasis(self, n):
